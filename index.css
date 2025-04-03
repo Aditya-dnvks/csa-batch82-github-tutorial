@@ -1,0 +1,166 @@
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+
+* {
+  font-family: Gilroy, arial, Helvetica Neue, sans-serif;
+}
+
+:root {
+  --my-color: #ffffff;
+  --my-height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.nav-bar {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
+}
+
+.nav-links-container {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  margin: 0px 10px;
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+
+.biryani-section {
+  padding: 20px 40px;
+}
+
+.biryani-section-heading {
+  font-size: 36px;
+  margin: 10px 0px;
+}
+
+.biryani-section-card {
+  width: 280px;
+}
+.biryani-section-card:hover {
+  scale: 0.95;
+}
+.biryani-section-card > img {
+  height: 185px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.biryani-section-dishes,
+.biryani-section-location {
+  font-size: 16px;
+  color: #727377;
+  margin: 5px 0px;
+  font-family: "Gilroy", sans-serif;
+}
+
+.biryani-section-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 5px 0px;
+}
+.biryani-section-rating-description {
+  margin: 0;
+}
+
+.biryani-section-content > h1 {
+  margin: 5px 0px;
+  font-size: 20px;
+}
+.biryani-section-content {
+  padding: 12px;
+  border-radius: 16px;
+}
+
+.biryani-section-cards-container {
+  /* visibility: hidden; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 100px;
+}
+
+/* extra small */
+/* @media (min-width: 0px) {
+  .biryani-section-content {
+    background-color: bisque;
+  }
+} */
+
+/* small */
+/* @media (min-width: 576px) {
+  .biryani-section-content {
+    background-color: red;
+  }
+} */
+
+.biryani-section-paragraph1 {
+  font-size: 18px;
+  color: #02060c;
+  margin: 0;
+}
+
+.biryani-section-paragraph2 {
+  font-size: 18px;
+  color: #02060c;
+  margin: 0;
+  display: none;
+}
+/* medium */
+/* mobile */
+@media (max-width: 768px) {
+  .biryani-section-content {
+    background-color: green;
+  }
+  .biryani-section-paragraph1 {
+    display: none;
+  }
+  .biryani-section-paragraph2 {
+    display: block;
+  }
+}
+
+/* large */
+/* @media (min-width: 992px) {
+  .biryani-section-content {
+    background-color: pink;
+  }
+} */
+
+/* extra large */
+/* @media (min-width: 1200px) {
+  .biryani-section-content {
+    background-color: chocolate;
+  }
+} */
+
+.custom-css {
+  background-color: yellow !important;
+  height: 500px;
+}
+
+.cutom-style {
+  align-self: flex-end;
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
